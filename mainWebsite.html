@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;900&family=Varela+Round&display=swap" rel="stylesheet">
+	<title>Technology</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Varela Round', sans-serif;
+		}
+		a {
+			text-decoration: none;
+		}
+		body{
+			width: 100%;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+		.btt{
+  			display: none;
+  			position: fixed;
+  			bottom: 20px;
+  			right: 30px;
+  			z-index: 99;
+  			border: none;
+  			outline: none;
+  			background-color: #29485b;
+  			color: white;
+  			cursor: pointer;
+  			padding: 15px;
+  			border-radius: 10px;
+  			font-size: 18px;
+}
+/*///////////////////////////////////homePage start ///////////////////////////////////*/
+		.homePage{
+			width: 100%;
+			height: 100vh;
+			background: /*linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),*/url(https://images.alphacoders.com/105/thumb-1920-1056771.jpg);
+			background-size: cover;
+		}
+		.nav{
+			width: 100%;
+			-webkit-backdrop-filter: blur(15px);
+			backdrop-filter: blur(15px);
+			display: flex;
+			align-items: center;
+		}
+		.navLinks{
+			display: inline-flex;
+			list-style: none;
+			position: absolute;
+			right: 10px;
+		}
+		.navLinks a{
+			text-decoration: none;
+		}
+		.navLinks li{
+			padding: 0 20px 0 20px;
+			height: 40px;
+			font-size: 1.3em;
+			font-weight: bold;
+			background: #999fff;
+			margin: 0 5px 0 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 20px;
+		}
+		.textArea{
+			width: 50vw;
+			height: 35vh;
+			margin: auto;
+			margin-top: 7%;
+			margin-bottom: 20px;
+			-webkit-backdrop-filter: blur(5px);
+			backdrop-filter: blur(5px);
+			border-radius: 50px;
+			padding: 10px;
+			border: 5px solid coral;
+			transition: all 0.7s;
+		}
+		.textArea:hover {
+			-webkit-backdrop-filter: blur(35px);
+			backdrop-filter: blur(35px);
+			transform: scale(1.1);
+		}
+		.textArea h1{
+			font-size: 4.2vw;
+			color: coral;
+			text-align: center;
+			margin: 20px;
+			font-weight: bold;
+		}
+		.textArea p {
+			font-size: 1.9vw;
+			margin: 10px;
+			padding: 0 20px 0 20px;
+			text-transform: capitalize;
+			color: #fff;
+
+		}	
+		.button{
+			width: 200px;
+			height: 60px;
+			background: ;
+			border-radius: 20px;
+			border: 5px solid coral;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			-webkit-backdrop-filter: blur(5px);
+			backdrop-filter: blur(5px);
+			margin: auto;
+			transition: 0.7s;
+			cursor: pointer;
+		}
+		.button p {
+			color: #fff;
+			font-size: 2.5em;
+			margin: 3px;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.button:hover{
+			width: 600px;
+			background: coral;
+		}
+/*///////////////////////////////////homePage end ////////////////////////////////////*/
+
+
+/*///////////////////////////////////advancements start///////////////////////////////*/
+
+		.advancements{
+			width: 100%;
+			background: #0b2a46;
+			position: relative;
+		}
+		.header h1{
+			font-size: 4em;
+			color: coral;
+			padding: 60px 60px 20px 60px;
+		}
+		.header p{
+			font-size: 2em;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.advancements .col{
+			width: 80%;
+			height: 320px;
+			margin: auto;
+			margin-left: 9%;
+			border-radius: 30px;
+			background: #23395d;
+			display: inline-flex;
+			overflow: hidden;
+			margin-bottom: 80px;
+			transition: all 0.6s;
+		}
+		.col:hover{
+			transform: scale(1.1);
+			box-shadow: 6px 6px 4px #192121;
+		}
+		.col .sir{
+			border-radius: 30px;
+			margin-right: 60px;
+			/*width: 426px;
+			height: 320px;*/
+			position: relative;
+		}
+		.sirArea{
+			width: 426px;
+			height: 320px;
+			margin-right: 60px;
+			border-radius: 30px;
+			overflow: hidden;
+		}
+		.col h1{
+			font-size: 4vw;
+			color: coral;
+			padding: 12px 12px 12px 0px ; 
+			padding-bottom: 0px;
+		}
+		.col h3{
+			color: rgb(240, 240, 240);
+		}
+/*///////////////////////////////////advancements end ////////////////////////////////////*/
+
+
+/*///////////////////////////////////Inventions start///////////////////////////////*/
+
+		.inventions{
+			width: 100%;
+			height: 110vh;
+			background: #11507b;
+			position: relative;
+		}
+		.inventionCol{
+			width: 990px;
+			height: 420px;
+			background: #194569;
+			border-radius: 40px;
+			overflow: hidden;
+			display: block;
+		}
+		.autoSlide{
+			margin: auto;
+			height: 420px;
+			width: 990px;
+			border-radius: 40px;									
+			position: relative;
+			overflow: hidden;
+		}
+		.inventionCol .content h1{
+			font-size: 4vw;
+			padding: 30px;
+			color: coral;
+			text-align: center;
+		}
+		.inventionCol .content img{
+			width: 600px;
+			height: 450px;
+		}
+		.inventionCol .content h3{
+			font-size: 1.7vw;
+			padding: 0 20px 0 20px;
+		}
+		.inventionCol .content{
+			width: 350px;
+			height: 420px;
+			float: right;
+		}
+		.slideContents{
+			display: inline-flex;
+			height: 420px;
+			width: fit-content;
+			position: absolute;
+			animation: slide 18s linear infinite;
+			}
+			@keyframes slide{
+				0%,15%{left: 0px;}
+				20%,35%{left:-990px;}
+				40%,55%{left:-1980px;}
+				60%,75%{left:-2970px;}
+				80%,95%{left:-3960px;}
+				100%{left:-4950px;}
+			}
+	</style>
+</head>
+<body>
+	<button class="btt" id="btt" onclick="goToTop()">Back To Top</button>
+	<section class="homePage" id="homePage">
+		<div class="nav">
+			<img src="https://avnschoolfaridabad.com/wp-content/themes/avnfbd/assets/img/logos.png" width="70px">
+		<ul class="navLinks" id="navLinks">
+			<a href=""><li id="navLink">Home</li></a>
+			<a href="#advancements"><li id="navLink">Advancements</li></a>
+			<a href=""><li id="navLink">Inventions</li></a>
+			<a href=""><li id="navLink">More</li></a>
+		</ul>
+	</div>
+	<div class="textArea" id="textArea">
+		<h1>Indains Are Evolving!</h1>
+		<p>Indian are evolving and had created many advancements in the field of technology. Lets Explore what we indains had created and invented</p>
+	</div>
+	<a href="#advancements"><div class="button"><p>Click Here to Start The Journey</p></div></a>
+	</section>
+	<section class="advancements" id="advancements">
+		<div class="header">
+		<h1>Indains Are Leading The Top Companies</h1>
+		<p>Some Of Them Are:</p>
+	</div>
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://www.americanbazaaronline.com/wp-content/uploads/2019/12/SUNDAR-PICHAI-300x225.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Sundar Pichai</h1>
+				<h3 style="padding-bottom: 50px;">CEO, Alphabet Inc. and Google</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $181.69 billion (2020) </h3>
+				<h3 style="font-size: 1.7vw;">Number of employees:135,000 (2020)</h3>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://www.americanbazaaronline.com/wp-content/uploads/2014/10/Satya-Nadella-speaking-e1412969838305-250x165.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Satya Nadella</h1>
+				<h3 style="padding-bottom: 50px;">CEO, Microsoft</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $168.1 billion (2021)</h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: Nearly 181,000 (2021)</h3>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/2/18/w1200X800/Remotehg.JPG"><!-- </div> -->
+			<div class="content">
+				<h1>Arvind Krishna</h1>
+				<h3 style="padding-bottom: 50px;">Chairman & CEO, IBM</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $73.62 billion (2020) </h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: 345,900 (2020)</h3>
+			</div>
+		</div>
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://www.americanbazaaronline.com/wp-content/uploads/2019/05/Vivek-Sankaran-e1559927817311-300x215.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Vivek Sankaran</h1>
+				<h3 style="padding-bottom: 50px;">President and CEO, Albertsons</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $69 billion (2021) </h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: 300,000 (2021)</h3>
+			</div>
+		</div>
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://www.americanbazaaronline.com/wp-content/uploads/2019/06/Sanjay-Mehrotra-300x285.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Sanjay Mehrotra</h1>
+				<h3 style="padding-bottom: 50px;">President and CEO, Micron Technology</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $21 billion (2021)</h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: 30,000 (2021)</h3>
+			</div>
+		</div>
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://www.americanbazaaronline.com/wp-content/uploads/2017/07/Shantanu-Narayen-e1559510588181-300x204.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Shantanu Narayen</h1>
+				<h3 style="padding-bottom: 50px;">Chairman and CEO, Adobe Inc.</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $12.9 billion (2020) </h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: 22,500</h3>
+			</div>
+		</div>
+
+
+
+
+		<div class="col">
+			<!-- <div class="sirArea"> --><img class="sir"src="https://lookcharms.com/wp-content/uploads/2022/05/Parag-Agarwal-Twitter-CEO.jpg"><!-- </div> -->
+			<div class="content">
+				<h1>Parag Aggarwal</h1>
+				<h3 style="padding-bottom: 50px;">CEO, Twitter</h3>
+				<h3 style="font-size: 1.7vw;">Company revenue: $3.7 billion (2020)</h3>
+				<h3 style="font-size: 1.7vw;">Number of employees: 5,500 (2020)</h3>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+	<section class="inventions" id="inventions">
+		<div class="header">
+			<center><h1>Indian Technological Inventions</h1></center>
+			<p>Indain are also know for their invetions in technological feild let's see what they are</p>
+			</div>
+			<div class="autoSlide">
+				<div class="slideContents">
+
+
+
+
+			<div class="inventionCol">
+				<img src="https://images.gizbot.com/webp/img/2016/04/06-1459921849-mail-inbox.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1>E-Mail</h1>
+				<h3>VA Shiva Ayyadurai is an American scientist of Indian origin, inventor and entrepreneur. As a high school student in 1979, he developed an electronic version of an interoffice mail system, which he called "EMAIL" and copyrighted in 1982.</h3>
+			</div>
+			</div>
+
+			<div class="inventionCol">
+				<img src="https://images.gizbot.com/webp/img/2016/04/06-1459921838-antic-radio.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1>Radio</h1>
+				<h3 style="font-size: 1.4vw;">In 1895, Sir J. C. Bose gave his first public demonstration of electromagnetic waves, Sir J. C. Bose invented the Mercury Coherer (together with the telephone receiver) used by Guglielmo Marconi to receive the radio signal in his first transatlantic radio communication in December 1901.</h3>
+			</div>
+			</div>
+
+
+			<div class="inventionCol">
+				<img src="https://images.gizbot.com/webp/img/2016/04/06-1459921847-intil-microprocessor.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1 style="font-size: 3vw;">Intel Pentium Chip</h1>
+				<h3>The world famous and most widely used chip in computers, the Intel Pentium Chip was invented by Vinod Dham. He is also called the 'Father of Pentium Chip'.</h3>
+			</div>
+			</div>
+
+
+			<div class="inventionCol">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/SanDisk-Cruzer-USB-4GB-ThumbDrive.jpg/1200px-SanDisk-Cruzer-USB-4GB-ThumbDrive.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1>USB</h1>
+				<h3>The USB is a part of our daily lives. This tiny, data storage gadget was co-invented by an Indian-American computer architect Ajay Bhatt. But he didn't make any money out of it and he is okay with that.</h3>
+			</div>
+			</div>
+
+
+			<div class="inventionCol">
+				<img src="https://cdn.britannica.com/84/91884-004-DDDE5A86.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1 style="font-size: 3vw;">Fiber Optics</h1>
+				<h3>Dr. Narinder Singh Kapany is named as one of the 7 ‘Unsung Heroes' by Fortune Magazine and is widely recognized as the ‘Father of Fiber Optics' for his pioneering work in Fiber Optics technology.</h3>
+			</div>
+			</div>
+
+
+			<div class="inventionCol">
+				<img src="https://images.gizbot.com/webp/img/2016/04/06-1459921849-mail-inbox.jpg" style="width:600px;height: 450px;">
+				<div class="content">
+				<h1>E-Mail</h1>
+				<h3>VA Shiva Ayyadurai is an American scientist of Indian origin, inventor and entrepreneur. As a high school student in 1979, he developed an electronic version of an interoffice mail system, which he called "EMAIL" and copyrighted in 1982.</h3>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		var btt = document.querySelector('#btt');
+
+		window.onscroll = function() {showBtt()};
+
+		function showBtt(){
+			if (document.documentElement.scrollTop > 400) {
+				btt.style.display = "block";
+				btt.style.transition = "all 1s";
+			}
+			else{
+				btt.style.display = "none";
+			}
+		};
+		function goToTop(){
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>
